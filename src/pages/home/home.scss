@@ -1,3 +1,13 @@
-page-home {
+#home{
+    background: url('../assets/imgs/lst.jpg') no-repeat center;
+    background-size: cover;
+    #bt{
+        position: relative;
+        transform: translateY(73vh);
+         
+            background-color: rgb(240, 214, 68);
+            color: black;
+        
+    }
+}         
 
-}

@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {DAILY} from '../../dailytodo/daily'
+
 
 /**
- * Generated class for the HomePage page.
+ * Generated class for the AddtasksPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,20 +12,32 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html',
+  selector: 'page-addtasks',
+  templateUrl: 'addtasks.html',
 })
-export class HomePage {
-  name = "khesani";
+export class AddtasksPage {
+
+  donelist;
+  DAILY
+  name
+  tue 
+  wed
+  thur
+  fri
+  sat
+  sun
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HomePage');
+    console.log('ionViewDidLoad AddtasksPage');
   }
-  navigate(){
-    this.navCtrl.push('TasksPage',{nkhesani:this.name})
+
+  done(){
+    this.navCtrl.push('TasksPage')
+    DAILY.push({list:this.name})
+   
   }
 
 }

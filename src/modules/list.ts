@@ -1,0 +1,6 @@
+interface List {
+    list:string,
+  
+
+    
+}

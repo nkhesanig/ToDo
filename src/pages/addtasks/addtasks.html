@@ -1,0 +1,30 @@
+<!--
+  Generated template for the AddtasksPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>ADD ACTIVITIES</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+
+    <ion-item>
+
+        <ion-label floating>Daily Activities</ion-label>
+        <ion-input type=" text"[(ngModel)]="name"></ion-input>
+       </ion-item>
+
+       <div class="btnn">
+
+       <button ion-button block (click)="done()">Done</button>
+      </div>
+</ion-content>
